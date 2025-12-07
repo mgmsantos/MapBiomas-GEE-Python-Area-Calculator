@@ -54,10 +54,10 @@ except Exception as e:
 
 diretorio_shapes = 'shapes' # Nome da pasta onde os shapefiles de entrada estão localizados.
 id_coluna = 'fid' # Nome da coluna que identifica unicamente cada polígono (Feature) no shapefile.
+ano = '2024'  # Ano da classificação MapBiomas a ser utilizada (define a banda 'classification_2024').
 
 # CONFIGURAÇÕES MAPBIOMAS
 mapbiomas_asset = 'projects/mapbiomas-public/assets/brazil/lulc/collection10/mapbiomas_brazil_collection10_coverage_v2'
-ano = '2024'  # Ano da classificação MapBiomas a ser utilizada (define a banda 'classification_2024').
 
 # Define a pasta de saída do seu Google Drive para salvar todos os arquivos .csv
 folder_drive_export = f'GEE_MapBiomas_Batch_Export_{ano}'
@@ -215,7 +215,7 @@ def calculate_area_per_class(feature):
 
 print("\n========================================================")
 print(f"INICIANDO PROCESSAMENTO DE {len(arquivos_shp)} SHAPEFILES")
-print(f"========================================================")
+print(f"=========================================================")
 
 # Loop principal que itera sobre cada shapefile encontrado.
 for arquivo in arquivos_shp:
