@@ -1,4 +1,4 @@
-# Coverage Mapbiomas Área Calculator (Python & GEE Batch)
+## Coverage Mapbiomas Área Calculator (Python & GEE Batch)
 
 ---
 
