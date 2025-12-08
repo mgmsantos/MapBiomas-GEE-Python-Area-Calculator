@@ -61,7 +61,7 @@ ee.Authenticate()
 ```
 
 
-```
+```python
 
 # Após a autenticação bem-sucedida, o script deve inicializar a conexão:
 ee.Initialize()
@@ -113,21 +113,25 @@ O **Coverage Mapbiomas Área Calculator** não se limita a um único uso; sua au
 ### 1. Monitoramento e Conformidade Ambiental
 
 - **Validação de CAR (Cadastro Ambiental Rural):** rápida verificação da proporção de vegetação nativa, áreas de preservação permanente (APP) e reservas legais em grandes volumes de propriedades rurais;
+
 - **Auditoria de Desmatamento:** rastreamento eficiente das mudanças de uso do solo em múltiplas áreas de interesse ao longo dos anos (ajustando a variável `ano`), crucial para relatórios de **compliance**.
 
 ### 2. Agricultura e Planejamento Territorial
 
 - **Análise de Expansão Agrícola:** quantificação de pastagens e lavouras em novas fronteiras agrícolas ou dentro de bacias hidrográficas;
+
 - **Gestão de Fazendas/Portfólios:** cálculos precisos de áreas de produção e áreas de conservação para portfólios de terras com centenas de glebas, fornecendo dados prontos para **modelagem financeira**.
 
 ### 3. Pesquisa Acadêmica e Setor Público
 
 - **Estudos de Bacias Hidrográficas:** análise rápida da matriz de uso e ocupação do solo em grandes regiões hidrograficamente definidas, essencial para modelos hidrológicos;
+
 - **Validação de Modelos:** o CSV de saída é um dataset limpo e estruturado que pode ser facilmente usado para treinar modelos de Machine Learning ou validação de classificações próprias.
 
 ### 4. Consultoria e Relatórios de Sustentabilidade (ESG)
 
 - **Inventários de LULC:** geração automática de inventários detalhados para relatórios de Sustentabilidade e critérios **ESG (Ambiental, Social e Governança)**, provando o uso responsável da terra;
+
 - **Substituição do Uso Manual:** elimina a necessidade de abrir Shapefiles e rasters em softwares GIS locais para realizar o cruzamento, economizando horas de trabalho do analista.
 
 ---
