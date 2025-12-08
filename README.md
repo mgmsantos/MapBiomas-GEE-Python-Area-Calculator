@@ -90,8 +90,9 @@ Nota: talvez possa ser necessário gerar outro *token* e autenticar novamente ca
 │   ├── bacia_contas.shx
 │   ├── ... (todos os arquivos complementares ou mais arquivos shapefile)
 │   
-├── seu_script_aqui.py
+├── LICENSE
 ├── README.md
+├── mapbio_geepy_area_calculator.py
 
 ```
 
