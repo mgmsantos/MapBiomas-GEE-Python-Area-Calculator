@@ -59,6 +59,7 @@ Antes de rodar o script, deve-se configurar uma conta no Google Earth Engine e a
 ee.Authenticate() 
 
 ```
+--
 
 ```
 
