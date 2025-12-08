@@ -4,7 +4,7 @@
 
 ## Visão Geral do Projeto
 
-Este projeto é uma solução de automação desenvolvida em Python para processar grandes volumes de dados geoespaciais. Ele calcula a área exata (em hectares) de todas as classes de Uso e Cobertura da Terra (LULC) do MapBiomas Coleção 10 para múltiplos Shapefiles ou feições em lote, utilizando o poder de processamento em nuvem do Google Earth Engine (GEE).
+Este projeto é uma solução de automação desenvolvida em Python para processar grandes volumes de dados geoespaciais. Ele calcula a área (em hectares) de todas as classes de Uso e Cobertura da Terra (LULC) do MapBiomas Coleção 10 para múltiplos Shapefiles ou feições em lote, utilizando o poder de processamento em nuvem do Google Earth Engine (GEE).
 
 O script foi criado para resolver gargalos de escalabilidade e precisão em projetos que demandam o cruzamento rápido de limites personalizados com os dados raster do MapBiomas.
 
@@ -14,7 +14,7 @@ O script foi criado para resolver gargalos de escalabilidade e precisão em proj
 
 1. O script Python itera sobre a pasta de Shapefiles de entrada;
 2. Carrega as geometrias (via GeoPandas) e as envia para o GEE;
-3. O GEE executa o cálculo geodésico de área pixel a pixel ($30\text{m}$);
+3. O GEE executa o cálculo geodésico de área pixel a pixel (30m);
 4. O resultado, uma tabela no formato longo/tidy, é exportado diretamente para o Google Drive.
 
 ---
@@ -22,10 +22,10 @@ O script foi criado para resolver gargalos de escalabilidade e precisão em proj
 ## Funcionalidades Chave:
 
 - Processamento em Lote (Batch): Automação completa para iterar e processar todos os arquivos Shapefile dentro da pasta de entrada;
-- Cálculo Geodésico Preciso: Utiliza ee.Image.pixelArea() para garantir que a área (em $\text{m}^2$, convertida para hectares) seja calculada com precisão, considerando a curvatura da Terra e a resolução de $30\text{m}$ do MapBiomas;
+- Cálculo Geodésico Preciso: Utiliza `ee.Image.pixelArea()` para garantir que a área (em m², convertida para hectares) seja calculada com precisão, considerando a curvatura da Terra e a resolução de 30m do MapBiomas;
 - Alto Desempenho: Todo o processamento intensivo é realizado nos servidores do GEE, liberando recursos locais;
 - Limpeza de Metadados: O script traduz os códigos numéricos brutos do MapBiomas para nomes legíveis e padronizados (e.g., "3. AGROPECUÁRIA / Pastagem");
-- Saída Standard: Exportação direta para o Google Drive no formato CSV (padrão ee.batch.Export.table.toDrive).
+- Saída Standard: Exportação direta para o Google Drive no formato CSV (padrão `ee.batch.Export.table.toDrive`).
 
 ---
 
@@ -59,7 +59,6 @@ Antes de rodar o script, deve-se configurar uma conta no Google Earth Engine e a
 ee.Authenticate() 
 
 ```
-
 
 ```python
 
