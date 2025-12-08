@@ -74,6 +74,7 @@ Nota: talvez possa ser necessário gerar outro *token* e autenticar novamente ca
 3. Organização da estrutura
 
 ```
+
 /MapBiomas-GEE-Python-Area-Calculator/
 ├── shapes/
 │   ├── belem-pa.shp
@@ -122,13 +123,13 @@ O **Coverage Mapbiomas Área Calculator** não se limita a um único uso; sua au
 
 ### 3. Pesquisa Acadêmica e Setor Público
 
-* **Estudos de Bacias Hidrográficas:** análise rápida da matriz de uso e ocupação do solo em grandes regiões hidrograficamente definidas, essencial para modelos hidrológicos;
-* **Validação de Modelos:** o CSV de saída é um dataset limpo e estruturado que pode ser facilmente usado para treinar modelos de Machine Learning ou validação de classificações próprias.
+- **Estudos de Bacias Hidrográficas:** análise rápida da matriz de uso e ocupação do solo em grandes regiões hidrograficamente definidas, essencial para modelos hidrológicos;
+- **Validação de Modelos:** o CSV de saída é um dataset limpo e estruturado que pode ser facilmente usado para treinar modelos de Machine Learning ou validação de classificações próprias.
 
 ### 4. Consultoria e Relatórios de Sustentabilidade (ESG)
 
-* **Inventários de LULC:** geração automática de inventários detalhados para relatórios de Sustentabilidade e critérios **ESG (Ambiental, Social e Governança)**, provando o uso responsável da terra;
-* **Substituição do Uso Manual:** elimina a necessidade de abrir Shapefiles e rasters em softwares GIS locais para realizar o cruzamento, economizando horas de trabalho do analista.
+- **Inventários de LULC:** geração automática de inventários detalhados para relatórios de Sustentabilidade e critérios **ESG (Ambiental, Social e Governança)**, provando o uso responsável da terra;
+- **Substituição do Uso Manual:** elimina a necessidade de abrir Shapefiles e rasters em softwares GIS locais para realizar o cruzamento, economizando horas de trabalho do analista.
 
 ---
 
