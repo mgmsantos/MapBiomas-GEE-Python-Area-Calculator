@@ -83,19 +83,26 @@ Nota: talvez possa ser necessário gerar outro *token* e autenticar novamente ca
 
 /MapBiomas-GEE-Python-Area-Calculator/
 ├── shapes/
-│   ├── belem-pa.shp
-│   ├── belem-pa.shx
-│   ├── belem-pa.dbf
-│   ├── ... (todos os arquivos complementares do Shapefile)
+│   ├── bacia_contas.cpg
+│   ├── bacia_contas.dbf
+│   ├── bacia_contas.prj
+│   ├── bacia_contas.shp
+│   ├── bacia_contas.shx
+│   ├── ... (todos os arquivos complementares ou mais arquivos shapefile)
 │   
 ├── seu_script_aqui.py
 ├── README.md
 
 ```
 
+**Observação:** foi adicionado o shapefile da bacia hidrográfica do Rio de Contas para teste.
+
 4. Execução
 
 - Verificar e ajustar as variáveis `ano` (ano de classificação do MapBiomas) e `id_coluna` (chave primária necessária para identificação da feição no shapefile);
+
+- Se possível realizar a simplificação da geometria dos shapefiles antes de executar o script, visto que o GEE permite apenas requisições de geometria vetorial com tamanho
+próximo a 10MB;
 
 - Executar o script;
 
